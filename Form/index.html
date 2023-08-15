@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple from</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body >
+    <div class="container-sm">
+        <h1 class="text-primary">Registration form</h1>
+        <form action="#" onsubmit="return onsubmitform()" name="simpleform">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text"  class="form-control" name="name" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text"  class="form-control" name="email" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password"  class="form-control" name="password" />
+            </div>
+
+            <div class="form-group">
+                <label for="birthyear">Birthdate:</label>
+                <select name="birthyear" class="form-control">
+                    <option value="select">Select</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="terms"/> 
+                <label for="terms">Agree to the terms and condition</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
