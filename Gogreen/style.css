@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Preahvihear', sans-serif;
+}
+body::before{
+    content: "";
+    background: #000;
+    position: fixed;
+    background: url(bg2.jpg)  no-repeat center ;
+    background-size: cover; /* Fit the image while maintaining aspect ratio */
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    width: 100%;
+}
+.nav-logo a img{
+  width: 80px;
+  height: 100%;
+  border-radius: 50%;
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0px 20px; 
+    color: antiquewhite;
+ }
+ .navbar a:hover{
+    color:#00F5AB;
+ }
+
+ .middle{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    color:white;
+    height: 30vw;
+ }
+ .middle a{
+    text-decoration: none;
+    padding: 0px 20px;
+ }
+ .middle a:hover{
+    color: #00F5AB;
+    border: 1px 0px solid #00F5AB ;
+    border-style: solid;
+ }
+ .middle span:nth-child(1){
+    color: #1d7a5e;
+    font-size: 50px;
+    font-weight: 900;
+ }
+ .middle span{
+    color:antiquewhite;
+    font-size: 45px;
+    font-weight: 900;
+ }
+ .main
+ {  display: block;
+    width: 100%;
+    background: antiquewhite;
+    height: 100%;
+ }
+.main-agenda{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    gap: 15px;
+}
+.hh{
+   text-align: center;
+   font-size: 25px;
+}
+.main-card{
+   display: flex;
+   width: 25vw;
+   position: relative;
+   border-radius: 25px;
+   flex-direction: column;
+   top: -130px;
+   overflow: hidden;
+}
+.main-card h1 ,p{
+   background: #37e987;
+   text-align: center;
+   padding: 8px;
+   color: antiquewhite;
+}
+.main-card p{
+   font-size: 15px;
+   padding: 8px;
+}
+.main-card-image img{
+   height: 300px;
+   width: 100%;
+}
+.footer span{
+   color: #000;
+    font-size: 20px;
+}
+.help{
+   display: flex;
+  
+   width: 100%;
+   justify-content: space-evenly;
+   height: 250px
+}
+.donor,.helper{
+   display:block;
+   text-align: center;
+   width: 400px;
+}
+.donor button, .helper button{
+   padding: 10px 50px;
+   margin:20px;
+   border-radius: 8px;
+   background: #37e987;
+   width: 150px;
+   border: none;
+}
+.help button:hover{
+  background: #1d7a5e;
+  color: antiquewhite;
+}
+.donor p ,.helper p{
+font-size: 15px;
+margin-bottom: 10px;
+}
+.help span{
+   padding:5px;
+}
+.donor-input{
+   height: 70vw;
+}
