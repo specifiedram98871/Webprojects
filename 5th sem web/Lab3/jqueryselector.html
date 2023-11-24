@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+         .styledDiv {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="styledDiv">
+       <h1>I am styledDiv</h1> 
+    </div>
+
+    <div id="myDiv">
+        <p class="selected">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <p id="special">This is a special paragraph.</p>
+    </div>
+
+    <script>
+        // jQuery Selectors
+        let selectedParagraphs = $(".selected"); // Selects elements with class 'selected'
+        let allParagraphs = $("p"); // Selects all <p> elements
+        let specialParagraph = $("#special"); // Selects element with id 'special'
+
+        // Applying styles
+        selectedParagraphs.css("color", "red");
+        allParagraphs.css("font-size", "18px");
+        specialParagraph.css("background-color", "yellow");
+
+
+         $(".styledDiv")
+                .fadeIn(2000)
+                .delay(1000)
+                .fadeOut(2000)
+                .fadeIn(2000);
+    </script>
+
+</body>
+
+</html>
