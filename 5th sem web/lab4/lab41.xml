@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company xmlns:e="http://example.com/employees" xmlns:p="http://example.com/projects">
+    <!-- Employee Information -->
+    <e:employee id="1">
+        <e:name>John Doe</e:name>
+        <e:projects>
+            <p:project>
+                <p:name>Project A</p:name>
+                <p:startDate>2023-01-01</p:startDate>
+            </p:project>
+            <p:project>
+                <p:name>Project B</p:name>
+                <p:startDate>2023-02-15</p:startDate>
+            </p:project>
+        </e:projects>
+    </e:employee>
+
+    <e:employee id="2">
+        <e:name>Jane Smith</e:name>
+        <e:projects>
+            <p:project>
+                <p:name>Project C</p:name>
+                <p:startDate>2023-03-10</p:startDate>
+            </p:project>
+        </e:projects>
+    </e:employee>
+
+    <!-- Add more employees and projects as needed -->
+
+</company>

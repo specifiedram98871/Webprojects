@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Define student type -->
+  <xscomplexType name="StudentType">
+    <xs:sequence>
+      <xs:element name="ID" type="xs:integer"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="age" type="xs:integer"/>
+      <xs:element name="courses" type="CoursesType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Define courses type -->
+  <xs:complexType name="CoursesType">
+    <xs:sequence>
+      <xs:element name="course" type="CourseType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Define course type -->
+  <xs:complexType name="CourseType">
+    <xs:sequence>
+      <xs:element name="code" type="xs:string"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="grade" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Define root element -->
+  <xs:element name="students" type="StudentType"/>
+
+</xs:schema>
