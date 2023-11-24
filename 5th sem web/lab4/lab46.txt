@@ -1,0 +1,13 @@
+a.>> Select the titles of all movies:
+for $movie in doc("movies.xml")/movies/movie
+return $movie/title/text()
+
+b.>>Select the directors of movies released after the year 2000:
+for $movie in doc("movies.xml")/movies/movie
+where $movie/year/text() > 2000
+return $movie/director/text()
+
+c. Select the titles of movies in the "Sci-Fi" genre:
+for $movie in doc("movies.xml")/movies/movie
+where $movie/genre/text() = "Sci-Fi"
+return $movie/title/text()

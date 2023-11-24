@@ -1,0 +1,10 @@
+<!ELEMENT library (book+)>
+<!ELEMENT book (title, author, publicationYear, ISBN)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (firstName, lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT publicationYear (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ATTLIST book ISBN ID #REQUIRED>
+<!ATTLIST publicationYear CDATA #REQUIRED>

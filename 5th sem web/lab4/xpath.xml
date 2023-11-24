@@ -1,0 +1,8 @@
+for a>>
+/library/book/title
+
+for b>>
+/library/book[2]/price
+
+for c>>
+/library/book[title = 'Advanced XML Techniques']/author
