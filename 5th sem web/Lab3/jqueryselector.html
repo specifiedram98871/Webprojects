@@ -30,26 +30,34 @@
         <p>This is another paragraph.</p>
         <p id="special">This is a special paragraph.</p>
     </div>
-
+    <p>Click for jquery effect</p>
+  <button type="button">Click</button>
+  <p id="remove">Remove me</p>
     <script>
         // jQuery Selectors
-        let selectedParagraphs = $(".selected"); // Selects elements with class 'selected'
-        let allParagraphs = $("p"); // Selects all <p> elements
-        let specialParagraph = $("#special"); // Selects element with id 'special'
-
-        // Applying styles
-        selectedParagraphs.css("color", "red");
-        allParagraphs.css("font-size", "18px");
-        specialParagraph.css("background-color", "yellow");
-
-
-         $(".styledDiv")
-                .fadeIn(2000)
-                .delay(1000)
-                .fadeOut(2000)
-                .fadeIn(2000);
-    </script>
-
+        $(document).ready(function(){
+            
+            let classSelector = $(".selected"); // Selects elements with class 'selected'
+            let elementSelecter = $("p"); // Selects all <p> elements
+            let idSelector = $("#special"); // Selects element with id 'special'
+    
+            // Applying styles
+    
+            classSelector.css("color", "red");
+            elementSelecter.css("font-size", "18px");
+            idSelector.css("background-color", "yellow");
+    
+         $('button').click(function(){
+             $('#remove').hide();
+             $(".styledDiv")
+                    .fadeIn(2000)
+                    .delay(1000)
+                    .fadeOut(2000)
+                    .fadeIn(2000);
+                })
+         })
+        </script>
+            
 </body>
 
 </html>
